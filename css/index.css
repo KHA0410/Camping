@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins';
+}
+
+.contain{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/* HEADER */
+header{
+    background-color: #f7e2d9;
+}
+
+.menu{
+    padding-top: 10px;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu ul li{
+    display: inline;
+}
+
+.menu ul a{
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+}
+
+.menu .active a{
+    color:#e76f51 ;
+}
+
+/* CAROUSEL */
+.carousel{
+    background-image: url('../img/BG.png');
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ACTIVITIES */
+.activities{
+    background-color: #faf5f2;
+}
+
+.activities__title{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.activities__title h2{
+    font-size: 30px;
+    color: #969591;
+}
+
+.activities__content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.activities__card{
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.activities__img{
+    position: relative;
+}
+
+.activities__img img{
+    border-radius: 25px;
+    width: 100%;
+}
+
+.activities__icon i{
+    width: 42px;
+    height: 42px;
+    background-color: rgba(255, 255, 255, 0.8);
+    line-height: 42px;
+    color: #e47465;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.activities__card h3{
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.activities__card p{
+    color: #969591;
+}
+
+.activities__card .read-btn{
+    background-color: #e8e8e8;
+    color: #3b3735;
+    border: none;
+    border-radius: 30px;
+    line-height: 30px;
+    width: 150px;
+    margin-top: 15px;
+}
+
+.activities__view-btn{
+    text-align: center;
+}
+
+.activities__view-btn button{
+    font-size: 20px;
+    width: 300px;
+    border: #e47465 1px solid;
+    border-radius: 30px;
+    background-color: transparent;
+    color: red;
+    margin: 30px 0 50px 0;
+    padding: 10px;
+}
+
+@media (max-width: 759px) {
+    .activities__content{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+}
+@media (min-width: 760px) and (max-width: 1024px) {
+    .activities__content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
