@@ -136,6 +136,57 @@ header{
     padding: 10px;
 }
 
+.activities__view-btn button:hover{
+    background-color: #e47465;
+    color: white;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+/* CONTACT */
+.contact{
+    padding-top: 50px;
+    background-color: #f8e1db;
+    background-image: url("../img/mask.png");
+    background-position: -60%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+}
+
+
+.contact__left, .contact__right{
+margin: 0 auto;
+}
+
+.contact__right h2{
+    color: #969591;
+    font-size: 30px;
+}
+
+.contact__right p{
+    color: #3b3735;
+
+}
+
+.contact__social{
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+
+.social__dowload h3, .social__follow h3{
+    padding: 20px 0;
+    font-size: 20px;
+    color: #969591;
+}
+
+.follow__icon i{
+    color: #e76f51;
+    font-size: 42px;
+}
+
 @media (max-width: 759px) {
     .activities__content{
         grid-template-columns: repeat(1, 1fr);
