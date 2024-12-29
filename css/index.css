@@ -155,7 +155,6 @@ header{
     align-items: center;
 }
 
-
 .contact__left, .contact__right{
 margin: 0 auto;
 }
@@ -185,6 +184,48 @@ margin: 0 auto;
 .follow__icon i{
     color: #e76f51;
     font-size: 42px;
+    line-height: 42px;
+}
+
+/* FOOTER */
+.footer{
+    background-color: #faf5f2;
+    padding-top: 100px;
+}
+
+.footer__items{
+    padding-top: 60px;
+    background-color: #f8e1db;
+    border-radius: 30px 30px 0 0;
+    display: flex;
+    justify-content: center;
+
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+    gap: 30px;
+}
+
+.footer__contact{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.footer__items h3{
+    font-size: 20px;
+}
+
+.footer__items h4, .footer__items p{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.footer__copyright{
+    text-align: center;
+    font-size: 20px;
+    background-color: #f8e1db;
+    padding: 30px 0;
 }
 
 @media (max-width: 759px) {
